@@ -1,0 +1,87 @@
+.hero {
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 35.9375rem;
+  max-height: 37.5rem;
+  display: flex;
+}
+
+h1 {
+  color: white;
+}
+.hero__title {
+  min-width: 17.5rem;
+  max-width: 18.75rem;
+  min-height: 11.25rem;
+  max-height: 12.5rem;
+  background-color: #393939;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__title__border-effect {
+  border: #5bacc3 4px solid;
+  position: absolute;
+  min-width: 17.5rem;
+  max-width: 18.75rem;
+  min-height: 11.25rem;
+  max-height: 12.5rem;
+  top: -7%;
+  left: -5%;
+}
+
+.nav-bar__menu-items {
+  min-width: 100%;
+  max-width: 100%;
+  background-color: #393939;
+  text-align: center;
+  margin: 0;
+  min-height: 3.75rem;
+  max-height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.nav-bar__menu-items li {
+  border-left: 4px solid #5bacc3;
+  padding: 0 1.25rem;
+}
+
+.nav-bar__menu-items a {
+  color: white;
+}
+
+.menu-section {
+  text-align: center;
+}
+.menu-section h2 {
+  padding: 1.25rem;
+}
+
+.menu-section__item {
+  padding: 1.25rem;
+}
+
+.menu-section--nitro-pink {
+  background-color: #fff0ed;
+}
+.menu-section--light-gray {
+  background-color: #f7f7f7;
+}
+
+.menu-section__item-description {
+  font-style: italic;
+  display: block;
+  max-width: 30%;
+  margin: auto;
+}
+
+.price {
+  margin: 0, 20, 20, 20;
+}
