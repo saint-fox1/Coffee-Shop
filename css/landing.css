@@ -28,8 +28,8 @@
   width: 190px;
   height: 67px;
   position: absolute;
-  top: -10%;
-  left: -3.5%;
+  top: -8px;
+  left: -8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,8 +151,8 @@
   height: 370px;
   position: absolute;
   border: #5bacc3 5px solid;
-  top: -5%;
-  left: -5%;
+  top: -15px;
+  left: -15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +169,8 @@ footer {
   background-color: #fff0ed;
   text-align: center;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer__section {
@@ -186,4 +188,19 @@ footer {
 }
 .footer__section img {
   margin-top: 1.25rem;
+}
+
+.footer__background-bean-decoration {
+  position: absolute;
+  opacity: 0.3;
+  height: 100px;
+  width: 100px;
+}
+.footer__background-bean-decoration-left {
+  top: 40px;
+  left: -30px;
+}
+.footer__background-bean-decoration-right {
+  bottom: 40px;
+  right: -30px;
 }
