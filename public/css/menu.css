@@ -63,6 +63,7 @@ a,
 p {
   font-size: 1.125rem;
   font-weight: 400;
+  font-weight: 400;
 }
 
 ul {
@@ -73,9 +74,7 @@ li {
   display: inline-block;
 }
 
-.nav-bar__icon,
-.footer__icon,
-.learn-more-section__icon {
+.icon {
   min-width: 3.125rem;
   max-width: 7.5rem;
   width: 3.125rem;
@@ -169,17 +168,17 @@ h1 {
 .menu-section__item {
   padding: 1.25rem;
 }
-.menu-section--nitro-pink {
-  background-color: #fff0ed;
-}
-.menu-section--light-gray {
-  background-color: #f7f7f7;
-}
 .menu-section__item-description {
   font-style: italic;
   display: block;
   max-width: 30%;
   margin: auto;
+}
+.menu-section--nitro-pink {
+  background-color: #fff0ed;
+}
+.menu-section--light-gray {
+  background-color: #f7f7f7;
 }
 
 .price {

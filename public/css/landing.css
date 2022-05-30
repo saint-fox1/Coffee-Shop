@@ -21,7 +21,6 @@ body {
   margin: 0;
   border: 0;
 }
-
 .nav-bar__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,16 +29,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .nav-bar__main li {
   padding: 1.25rem;
 }
-
 .nav-bar__main a {
   color: #393939;
   display: inline-block;
 }
-
 .nav-bar__main a:hover {
   color: #5bacc3;
 }
@@ -67,6 +63,7 @@ a,
 p {
   font-size: 1.125rem;
   font-weight: 400;
+  font-weight: 400;
 }
 
 ul {
@@ -77,13 +74,11 @@ li {
   display: inline-block;
 }
 
-.nav-bar__icon,
-.footer__icon,
-.learn-more-section__icon {
+.icon {
   min-width: 3.125rem;
   max-width: 7.5rem;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 h3 a {
@@ -100,9 +95,8 @@ h3 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .hero__title, .hero__img {
   width: 30%;
@@ -118,18 +112,18 @@ h3 a {
   color: #fff;
   border: none;
   text-decoration: none;
-  width: 190px;
-  height: 67px;
-  margin-top: 40px;
+  width: 11.875rem;
+  height: 4.188rem;
+  margin-top: 2.5rem;
   position: relative;
 }
 .button__border-effect {
   border: #393939 3px solid;
-  width: 190px;
-  height: 67px;
+  width: 11.875rem;
+  height: 4.188rem;
   position: absolute;
-  top: -8px;
-  left: -8px;
+  top: -0.5rem;
+  left: -0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,16 +134,19 @@ h3 a {
       -ms-flex-align: center;
           align-items: center;
 }
+.button__border-effect:active {
+  top: 0;
+  left: 0;
+}
 
 .merchandise__btn {
-  margin: 60px auto;
+  margin: 3.75rem auto;
   margin-bottom: 0;
 }
 
 .discount {
   background-color: #fff;
 }
-
 .discount p {
   font-size: 2.8125rem;
   min-width: 2.8125rem;
@@ -157,9 +154,16 @@ h3 a {
   background-color: #393939;
   color: #fff;
   text-align: center;
-  margin: 180px auto;
+  margin: 11.25rem auto;
   padding: 2.5rem;
   vertical-align: middle;
+  transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+}
+.discount p:hover {
+  background-color: #5bacc3;
 }
 
 .merchandise {
@@ -168,12 +172,10 @@ h3 a {
   padding: 3.75rem;
   margin: auto;
 }
-
 .merchandise > h2 {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
 }
-
 .merchandise__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +183,6 @@ h3 a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .merchandise__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +206,6 @@ h3 a {
           box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
-
 .merchandise__card__bottom {
   background-color: #fff0ed;
   display: -webkit-box;
@@ -215,7 +215,6 @@ h3 a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .merchandise__card__bottom__text-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,37 +227,31 @@ h3 a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .merchandise__card__bottom__text {
   font-weight: 200;
   margin: 0;
 }
-
 .merchandise__price {
   font-size: 2.0625rem;
   font-weight: bold;
 }
-
 .merchandise__product {
   min-height: 15rem;
   max-height: 34.375rem;
-  padding: 20px 100px;
+  padding: 1.25rem 6.25rem;
 }
 
 .learn-more-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 6.25rem;
 }
-
 .learn-more-section__text {
   width: 40%;
 }
-
 .learn-more-section__icon-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,23 +260,21 @@ h3 a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .learn-more-section__img-background {
-  width: 370px;
-  height: 370px;
+  width: 23.125rem;
+  height: 23.125rem;
   background-image: url(/assets/images/coldbrewbackground.png);
   background-size: cover;
   background-position: center;
   position: relative;
 }
-
 .learn-more-section__img-border {
-  width: 370px;
-  height: 370px;
+  width: 23.125rem;
+  height: 23.125rem;
   position: absolute;
   border: #5bacc3 5px solid;
-  top: -15px;
-  left: -15px;
+  top: -0.938rem;
+  left: -0.938rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,56 +285,74 @@ h3 a {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .learn-more-section__img--rotating {
-  margin: 40px;
+  margin: 2.5rem;
 }
-
+.learn-more-section__img--rotating:hover {
+  -webkit-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
 .learn-more-section__btn {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
-footer {
+.footer {
   background-color: #fff0ed;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 .footer__section {
   margin: 2.5rem auto;
   padding: 2.5rem;
   text-align: left;
 }
-
 .footer__section p:nth-child(2) {
   margin-bottom: 0;
 }
-
 .footer__section p:nth-child(3) {
   margin-top: 0;
 }
-
 .footer__section img {
   margin-top: 1.25rem;
 }
-
 .footer__background-bean-decoration {
   position: absolute;
   opacity: 0.3;
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
 }
-
 .footer__background-bean-decoration-left {
-  top: 40px;
-  left: -30px;
+  top: 2.5rem;
+  left: -1.875rem;
 }
-
 .footer__background-bean-decoration-right {
-  bottom: 40px;
-  right: -30px;
+  bottom: 2.5rem;
+  right: -1.875rem;
 }

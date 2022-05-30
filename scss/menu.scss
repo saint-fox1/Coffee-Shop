@@ -21,16 +21,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-  &__title__border-effect {
-    border: $nitro-blue 4px solid;
-    position: absolute;
-    min-width: 17.5rem;
-    max-width: 18.75rem;
-    min-height: 11.25rem;
-    max-height: 12.5rem;
-    top: -7%;
-    left: -5%;
+    &__border-effect {
+      border: $nitro-blue 4px solid;
+      position: absolute;
+      min-width: 17.5rem;
+      max-width: 18.75rem;
+      min-height: 11.25rem;
+      max-height: 12.5rem;
+      top: -7%;
+      left: -5%;
+    }
   }
 }
 
@@ -64,6 +64,12 @@ h1 {
   }
   &__item {
     padding: 1.25rem;
+    &-description {
+      font-style: italic;
+      display: block;
+      max-width: 30%;
+      margin: auto;
+    }
   }
 
   &--nitro-pink {
@@ -71,13 +77,6 @@ h1 {
   }
   &--light-gray {
     background-color: $light-gray;
-  }
-
-  &__item-description {
-    font-style: italic;
-    display: block;
-    max-width: 30%;
-    margin: auto;
   }
 }
 
