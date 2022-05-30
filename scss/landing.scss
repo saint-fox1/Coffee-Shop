@@ -1,0 +1,195 @@
+@use "./partials/global" as *;
+
+.hero {
+  background-color: $nitro-pink;
+  display: flex;
+  justify-content: space-between;
+
+  &__title,
+  &__img {
+    width: 30%;
+    display: inline-block;
+    margin: 6.25rem;
+  }
+
+  &__img {
+    text-align: right;
+  }
+}
+
+.button {
+  background-color: $nitro-blue;
+  color: $font-color-secondary;
+  border: none;
+  text-decoration: none;
+  width: 11.875rem;
+  height: 4.188rem;
+  margin-top: 2.5rem;
+  position: relative;
+  &__border-effect {
+    border: $graphite 3px solid;
+    width: 11.875rem;
+    height: 4.188rem;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.merchandise__btn {
+  margin: 3.75rem auto;
+  margin-bottom: 0;
+}
+
+.discount {
+  background-color: $white;
+  p {
+    font-size: 2.8125rem;
+    min-width: 2.8125rem;
+    max-width: 90%;
+    background-color: $graphite;
+    color: $font-color-secondary;
+    text-align: center;
+    margin: 11.25rem auto;
+    padding: 2.5rem;
+    vertical-align: middle;
+  }
+}
+
+.merchandise {
+  background-color: $light-gray;
+  margin: 0;
+  padding: 3.75rem;
+  margin: auto;
+  > h2 {
+    text-align: center;
+    padding-bottom: 3.75rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 20.625rem;
+    max-width: 21.875rem;
+    min-height: 27.5rem;
+    max-height: 28.75rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    background-color: $white;
+  }
+
+  &__card__bottom {
+    background-color: $nitro-pink;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  &__card__bottom__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__card__bottom__text {
+    font-weight: 200;
+    margin: 0;
+  }
+  &__price {
+    font-size: 2.0625rem;
+    font-weight: bold;
+  }
+
+  &__product {
+    min-height: 15rem;
+    max-height: 34.375rem;
+    padding: 1.25rem 6.25rem;
+  }
+}
+
+.learn-more-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 6.25rem;
+  &__text {
+    width: 40%;
+  }
+
+  &__icon-holder {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-background {
+    width: 23.125rem;
+    height: 23.125rem;
+    background-image: url(/assets/images/coldbrewbackground.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  &__img-border {
+    width: 23.125rem;
+    height: 23.125rem;
+    position: absolute;
+    border: $nitro-blue 5px solid;
+    top: -0.938rem;
+    left: -0.938rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img--rotating {
+    margin: 2.5rem;
+  }
+  &__btn {
+    margin-top: 2.5rem;
+  }
+}
+
+footer {
+  background-color: $nitro-pink;
+  text-align: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  &__section {
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    text-align: left;
+  }
+  &__section p:nth-child(2) {
+    margin-bottom: 0;
+  }
+  &__section p:nth-child(3) {
+    margin-top: 0;
+  }
+  &__section img {
+    margin-top: 1.25rem;
+  }
+
+  &__background-bean-decoration {
+    position: absolute;
+    opacity: 0.3;
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+  &__background-bean-decoration-left {
+    top: 2.5rem;
+    left: -1.875rem;
+  }
+  &__background-bean-decoration-right {
+    bottom: 2.5rem;
+    right: -1.875rem;
+  }
+}

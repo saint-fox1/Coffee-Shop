@@ -1,0 +1,349 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #393939;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: #fff0ed;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.nav-bar__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-bar__main li {
+  padding: 1.25rem;
+}
+
+.nav-bar__main a {
+  color: #393939;
+  display: inline-block;
+}
+
+.nav-bar__main a:hover {
+  color: #5bacc3;
+}
+
+h1,
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+a,
+.button {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.nav-bar__icon,
+.footer__icon,
+.learn-more-section__icon {
+  min-width: 3.125rem;
+  max-width: 7.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+h3 a {
+  text-decoration: none;
+}
+
+.menu-section__price,
+.merchandise__price {
+  color: #5bacc3;
+}
+
+.hero {
+  background-color: #fff0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero__title, .hero__img {
+  width: 30%;
+  display: inline-block;
+  margin: 6.25rem;
+}
+.hero__img {
+  text-align: right;
+}
+
+.button {
+  background-color: #5bacc3;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  width: 190px;
+  height: 67px;
+  margin-top: 40px;
+  position: relative;
+}
+.button__border-effect {
+  border: #393939 3px solid;
+  width: 190px;
+  height: 67px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.merchandise__btn {
+  margin: 60px auto;
+  margin-bottom: 0;
+}
+
+.discount {
+  background-color: #fff;
+}
+
+.discount p {
+  font-size: 2.8125rem;
+  min-width: 2.8125rem;
+  max-width: 90%;
+  background-color: #393939;
+  color: #fff;
+  text-align: center;
+  margin: 180px auto;
+  padding: 2.5rem;
+  vertical-align: middle;
+}
+
+.merchandise {
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 3.75rem;
+  margin: auto;
+}
+
+.merchandise > h2 {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.merchandise__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.merchandise__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 20.625rem;
+  max-width: 21.875rem;
+  min-height: 27.5rem;
+  max-height: 28.75rem;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.merchandise__card__bottom {
+  background-color: #fff0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.merchandise__card__bottom__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.merchandise__card__bottom__text {
+  font-weight: 200;
+  margin: 0;
+}
+
+.merchandise__price {
+  font-size: 2.0625rem;
+  font-weight: bold;
+}
+
+.merchandise__product {
+  min-height: 15rem;
+  max-height: 34.375rem;
+  padding: 20px 100px;
+}
+
+.learn-more-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px;
+}
+
+.learn-more-section__text {
+  width: 40%;
+}
+
+.learn-more-section__icon-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learn-more-section__img-background {
+  width: 370px;
+  height: 370px;
+  background-image: url(/assets/images/coldbrewbackground.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.learn-more-section__img-border {
+  width: 370px;
+  height: 370px;
+  position: absolute;
+  border: #5bacc3 5px solid;
+  top: -15px;
+  left: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.learn-more-section__img--rotating {
+  margin: 40px;
+}
+
+.learn-more-section__btn {
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #fff0ed;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__section {
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  text-align: left;
+}
+
+.footer__section p:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.footer__section p:nth-child(3) {
+  margin-top: 0;
+}
+
+.footer__section img {
+  margin-top: 1.25rem;
+}
+
+.footer__background-bean-decoration {
+  position: absolute;
+  opacity: 0.3;
+  height: 100px;
+  width: 100px;
+}
+
+.footer__background-bean-decoration-left {
+  top: 40px;
+  left: -30px;
+}
+
+.footer__background-bean-decoration-right {
+  bottom: 40px;
+  right: -30px;
+}

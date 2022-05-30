@@ -1,3 +1,19 @@
+// primary
+$nitro-blue: #5bacc3;
+$nitro-pink: #fff0ed;
+
+// neutral
+$graphite: #393939;
+$gray: #909090;
+$light-gray: #f7f7f7;
+$white: #fff;
+
+// //font colors
+// $font-color-primary: $graphite;
+// $font-color-secondary: $white;
+// $font-color-highlight: $nitro-blue;
+// $font-color-alternate: $gray;
+
 :root {
   font-size: 16px;
 }
@@ -8,32 +24,31 @@
 body {
   font-family: "Open Sans";
   font-weight: 400;
-  color: #393939;
+  color: $graphite;
   margin: 0;
   padding: 0;
 }
 
 .nav-bar {
-  background-color: #fff0ed;
+  background-color: $nitro-pink;
   padding: 0;
   margin: 0;
   border: 0;
-}
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.nav-bar__main {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-bar__main li {
-  padding: 1.25rem;
-}
-.nav-bar__main a {
-  color: #393939;
-  display: inline-block;
-}
-.nav-bar__main a:hover {
-  color: #5bacc3;
+  &__main li {
+    padding: 1.25rem;
+  }
+  &__main a {
+    color: $graphite;
+    display: inline-block;
+  }
+  &__main a:hover {
+    color: $nitro-blue;
+  }
 }
 
 h1,
@@ -73,8 +88,8 @@ li {
 .learn-more-section__icon {
   min-width: 3.125rem;
   max-width: 7.5rem;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 h3 a {
@@ -82,5 +97,5 @@ h3 a {
 }
 .menu-section__price,
 .merchandise__price {
-  color: #5bacc3;
+  color: $nitro-blue;
 }
